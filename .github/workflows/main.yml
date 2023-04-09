@@ -22,8 +22,10 @@ jobs:
     - name: Authenticate with gcloud
       uses: google-github-actions/auth@main
       with:
-        service_account_key: ${{ secrets.APP_ENGINE_CREDENTIALS }}
+        credentials_json: ${{ secrets.APP_ENGINE_CREDENTIALS }}
         project_id: xenon-lantern-244817
+
+
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
