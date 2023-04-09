@@ -33,7 +33,7 @@ jobs:
         node-version: '16.19.1'
 
     - name: Install dependencies
-      run: nvm install 16.19.1
+      run: npm install
 
     - name: Deploy to App Engine Flexible
       run: gcloud app deploy app.yaml --quiet --verbosity=debug
