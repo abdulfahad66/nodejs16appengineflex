@@ -20,7 +20,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.status(200).send('Hello, world Running on GCP APp Engine Flexible with NodeJS!').end();
+  res.status(200).send('Hello, world Running on GCP APp Engine Flexible with NodeJS!V2').end();
 });
 
 // Start the server
